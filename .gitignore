@@ -1,6 +1,38 @@
-*.class
+.*
+!.gitignore
 
-# Package Files #
+#
+# java
+#
+*.class
+target/bin/src/main/webapp/WEB-INF/classes/
 *.jar
-*.war
-*.ear
+src/main/webapp/WEB-INF/lib/
+*Ignored.java
+
+#
+# especifico do gwt do projeto
+#
+src/main/webapp/app/
+src/main/webapp/WEB-INF/deploy/
+src/main/gwt-unitCache
+
+#
+# execucao em *nix
+#
+nohup.out
+
+#
+# git merge conflict backup files.
+#
+*.orig
+
+#
+# arquivos log sao resultados de execucoes
+#
+*.log
+*.lock
+*.pid
+tomcat
+war
+*.patch
